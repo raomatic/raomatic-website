@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #0e0e0e;
+      color: #f4f4f4;
+    }
+
+    header {
+      background: #111;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f4f4f4;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #222;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ff3b2e;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Ra’s Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="intro">
+      <h2>About Me</h2>
+      <p>Hi, I’m Ra — a curious beginner coder learning to bring ideas to life through code. This space is my playground for projects, experiments, and creative builds.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A cool thing I made. Still learning, but proud of it.</p>
+      </div>
+
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Something new I’m exploring. Might turn into something big.</p>
+      </div>
+
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Every project teaches me a little more about building things that work — and look good.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to connect or collaborate?</p>
+    <button onclick="sayHello()">Say hi 👋</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Ra. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert("Thanks for stopping by!");
+    }
+  </script>
+</body>
+</html>
